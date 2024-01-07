@@ -14,8 +14,16 @@
 		"ghcr.io/devcontainers/features/rust:1": {},
 		"ghcr.io/lee-orr/rusty-dev-containers/rust_windows_msvc:0": {},
 		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": {}
-	}
+	},
+    "customizations": {
+		"vscode": {
+			"extensions": ["Github.copilot"],
+			"settings": {
+				"rust-analyzer.cargo.autoreload": true
+			}
+		}
 
+	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
